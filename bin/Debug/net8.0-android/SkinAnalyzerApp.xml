@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SkinAnalyzerApp</name>
+    </assembly>
+    <members>
+        <member name="T:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel.Nombre">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel.nombre"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel.CondicionAnalisis">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel.condicionAnalisis"/>
+        </member>
+        <member name="F:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel.guardarCategoriaCommand">
+            <summary>The backing field for <see cref="P:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel.GuardarCategoriaCommand"/>.</summary>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel.GuardarCategoriaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SkinAnalyzerApp.ViewModels.AgregarCategoriaViewModel.GuardarCategoria"/>.</summary>
+        </member>
+        <member name="T:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.Nombre">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.nombre"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.Descripcion">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.descripcion"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.Precio">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.precio"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.Recomendacion">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.recomendacion"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.Categorias">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.categorias"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.CategoriaSeleccionada">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.categoriaSeleccionada"/>
+        </member>
+        <member name="F:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.guardarProductoCommand">
+            <summary>The backing field for <see cref="P:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.GuardarProductoCommand"/>.</summary>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.GuardarProductoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SkinAnalyzerApp.ViewModels.AgregarProductoViewModel.GuardarProducto"/>.</summary>
+        </member>
+        <member name="T:SkinAnalyzerApp.ViewModels.LoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.LoginViewModel.Email">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.LoginViewModel.email"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.LoginViewModel.password"/>
+        </member>
+        <member name="F:SkinAnalyzerApp.ViewModels.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:SkinAnalyzerApp.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SkinAnalyzerApp.ViewModels.LoginViewModel.Login"/>.</summary>
+        </member>
+        <member name="T:SkinAnalyzerApp.ViewModels.ProductosViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.ProductosViewModel.Productos">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.ProductosViewModel.productos"/>
+        </member>
+        <member name="F:SkinAnalyzerApp.ViewModels.ProductosViewModel.agregarProductoCommand">
+            <summary>The backing field for <see cref="P:SkinAnalyzerApp.ViewModels.ProductosViewModel.AgregarProductoCommand"/>.</summary>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.ProductosViewModel.AgregarProductoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SkinAnalyzerApp.ViewModels.ProductosViewModel.AgregarProducto"/>.</summary>
+        </member>
+        <member name="F:SkinAnalyzerApp.ViewModels.ProductosViewModel.editarProductoCommand">
+            <summary>The backing field for <see cref="P:SkinAnalyzerApp.ViewModels.ProductosViewModel.EditarProductoCommand"/>.</summary>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.ProductosViewModel.EditarProductoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:SkinAnalyzerApp.ViewModels.ProductosViewModel.EditarProducto(SkinAnalyzerApp.AppModels.Producto)"/>.</summary>
+        </member>
+        <member name="F:SkinAnalyzerApp.ViewModels.ProductosViewModel.eliminarProductoCommand">
+            <summary>The backing field for <see cref="P:SkinAnalyzerApp.ViewModels.ProductosViewModel.EliminarProductoCommand"/>.</summary>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.ProductosViewModel.EliminarProductoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:SkinAnalyzerApp.ViewModels.ProductosViewModel.EliminarProducto(SkinAnalyzerApp.AppModels.Producto)"/>.</summary>
+        </member>
+        <member name="T:SkinAnalyzerApp.ViewModels.RegisterViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.RegisterViewModel.Nombre">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.RegisterViewModel.nombre"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.RegisterViewModel.Email">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.RegisterViewModel.email"/>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.RegisterViewModel.Password">
+            <inheritdoc cref="F:SkinAnalyzerApp.ViewModels.RegisterViewModel.password"/>
+        </member>
+        <member name="F:SkinAnalyzerApp.ViewModels.RegisterViewModel.registrarUsuarioCommand">
+            <summary>The backing field for <see cref="P:SkinAnalyzerApp.ViewModels.RegisterViewModel.RegistrarUsuarioCommand"/>.</summary>
+        </member>
+        <member name="P:SkinAnalyzerApp.ViewModels.RegisterViewModel.RegistrarUsuarioCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SkinAnalyzerApp.ViewModels.RegisterViewModel.RegistrarUsuario"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CondicionAnalisis">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CondicionAnalisis" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Descripcion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Descripcion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Precio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Precio" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Recomendacion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Recomendacion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Categorias">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Categorias" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CategoriaSeleccionada">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CategoriaSeleccionada" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Productos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Productos" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CondicionAnalisis">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CondicionAnalisis" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Descripcion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Descripcion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Precio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Precio" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Recomendacion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Recomendacion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Categorias">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Categorias" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CategoriaSeleccionada">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CategoriaSeleccionada" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Productos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Productos" generated properties.</summary>
+        </member>
+    </members>
+</doc>

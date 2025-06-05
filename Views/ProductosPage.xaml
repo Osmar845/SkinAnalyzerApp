@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SkinAnalyzerApp.ViewModels"
+             x:Class="SkinAnalyzerApp.Views.ProductosPage"
+             Title="Productos">
+
+    <ContentPage.BindingContext>
+        <vm:ProductosViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20">
+        <!--<Button Text="Agregar Producto"
+                Command="{Binding AgregarProductoCommand}"
+                BackgroundColor="#27ae60"
+                TextColor="White"
+                Margin="0,0,0,10"/>-->
+
+        <CollectionView ItemsSource="{Binding Productos}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="10" Margin="0,5">
+                        <StackLayout>
+                            <Label Text="{Binding Nombre}" FontAttributes="Bold" FontSize="18"/>
+                            <Label Text="{Binding Descripcion}" FontSize="14"/>
+                            <Label Text="{Binding Precio, StringFormat='Precio: {0:C}'}" FontSize="14"/>
+                            <HorizontalStackLayout Spacing="10">
+                                <Button Text="Editar"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductosViewModel}}, Path=EditarProductoCommand}"
+                                        CommandParameter="{Binding .}" />
+                                <Button Text="Eliminar"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductosViewModel}}, Path=EliminarProductoCommand}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="Red"
+                                        TextColor="White"/>
+                            </HorizontalStackLayout>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

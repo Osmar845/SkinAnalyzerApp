@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SkinAnalyzerApp.ViewModels"
+             x:Class="SkinAnalyzerApp.Views.AgregarProductoPage"
+             Title="Agregar Producto">
+
+    <ContentPage.BindingContext>
+        <vm:AgregarProductoViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20" Spacing="10">
+        <Label Text="Nombre" />
+        <Entry Placeholder="Nombre del producto" Text="{Binding Nombre}" />
+
+        <Label Text="Categoría del Producto" />
+        <Picker Title="Selecciona una categoría"
+        ItemsSource="{Binding Categorias}"
+        ItemDisplayBinding="{Binding Nombre}"
+        SelectedItem="{Binding CategoriaSeleccionada}" />
+
+        <Label Text="Descripción" />
+        <Entry Placeholder="Descripción" Text="{Binding Descripcion}" />
+
+        <Label Text="Precio" />
+        <Entry Placeholder="0.00" Keyboard="Numeric" Text="{Binding Precio}" />
+
+        <Label Text="Recomedación" />
+        <Entry Placeholder="Recomendación Según Tipo de Piel" Text="{Binding Recomendacion}" />
+
+        <Button Text="Guardar" Command="{Binding GuardarProductoCommand}" BackgroundColor="#27ae60" TextColor="White" />
+    </StackLayout>
+</ContentPage>

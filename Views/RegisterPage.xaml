@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SkinAnalyzerApp.ViewModels"
+             x:Class="SkinAnalyzerApp.Views.RegisterPage"
+             Title="Registro">
+
+    <ContentPage.BindingContext>
+        <vm:RegisterViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="30" Spacing="20">
+        <Entry Placeholder="Nombre Completo" Text="{Binding Nombre}" />
+        <Entry Placeholder="Correo electrónico" Keyboard="Email" Text="{Binding Email}" />
+        <Entry Placeholder="Contraseña" IsPassword="True" Text="{Binding Password}" />
+
+        <Button Text="Registrarse"
+                Command="{Binding RegistrarUsuarioCommand}"
+                BackgroundColor="#2E86DE"
+                TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>

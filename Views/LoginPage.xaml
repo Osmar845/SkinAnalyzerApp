@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SkinAnalyzerApp.ViewModels"
+             x:Class="SkinAnalyzerApp.Views.LoginPage"
+             Title="Iniciar sesión"
+             BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <Label Text="Bienvenido" FontSize="32" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <Entry Placeholder="Correo electrónico"
+                   Keyboard="Email"
+                   Text="{Binding Email}" />
+
+            <Entry Placeholder="Contraseña"
+                   IsPassword="True"
+                   Text="{Binding Password}" />
+
+            <Button Text="Iniciar sesión"
+                    BackgroundColor="#2E86DE"
+                    TextColor="White"
+                    Command="{Binding LoginCommand}" />
+
+            <Label Text="¿No tienes cuenta?"
+                   HorizontalOptions="Center" />
+
+            <Button Text="Registrate Aquí"
+                    TextColor="#2E86DE"
+                    Clicked="OnRegisterClicked"
+                    BackgroundColor="Transparent" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
