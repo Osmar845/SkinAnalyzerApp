@@ -8,7 +8,7 @@ namespace SkinAnalyzerApp.Views
         {
             InitializeComponent();
 
-            string nombreUsuario = Preferences.Get("LoggedInUserName", "User");
+            string nombreUsuario = Preferences.Get("UsuarioNombre", "Usuario");
             lblNombreUsuario.Text = $"¡Hola, {nombreUsuario}!";
         }
 

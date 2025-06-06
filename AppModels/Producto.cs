@@ -13,6 +13,20 @@ namespace SkinAnalyzerApp.AppModels
 
         public string Descripcion { get; set; } = string.Empty;
 
+        public string Presentacion { get; set; } = string.Empty;
+
+        public string Cantidad { get; set; } = string.Empty;
+
+        public string UsoPrincipal { get; set; } = string.Empty;
+
+        public string PielRecomendada { get; set; } = string.Empty;
+
+        public string IngredintesActivos { get; set; }
+
+        public string Fragancia { get; set; } = string.Empty;
+
+        public string LibreDe { get; set; } = string.Empty;
+
         public decimal Precio { get; set; }
 
         public int CategoriaId { get; set; } // FK hacia Categoría
