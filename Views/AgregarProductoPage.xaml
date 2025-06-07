@@ -9,25 +9,96 @@
         <vm:AgregarProductoViewModel />
     </ContentPage.BindingContext>
 
-    <StackLayout Padding="20" Spacing="10">
-        <Label Text="Nombre" />
-        <Entry Placeholder="Nombre del producto" Text="{Binding Nombre}" />
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="12">
 
-        <Label Text="Categoría del Producto" />
-        <Picker Title="Selecciona una categoría"
-        ItemsSource="{Binding Categorias}"
-        ItemDisplayBinding="{Binding Nombre}"
-        SelectedItem="{Binding CategoriaSeleccionada}" />
+            <Label Text="Nombre del Producto" />
+            <Entry Placeholder="Ej: Hidratante Facial" Text="{Binding Nombre}" />
 
-        <Label Text="Descripción" />
-        <Entry Placeholder="Descripción" Text="{Binding Descripcion}" />
+            <Label Text="Marca" />
+            <Entry Placeholder="Ej: CeraVe" Text="{Binding Marca}" />
 
-        <Label Text="Precio" />
-        <Entry Placeholder="0.00" Keyboard="Numeric" Text="{Binding Precio}" />
+            <Label Text="Presentación" />
+            <Entry Placeholder="Ej: Tubo 100ml" Text="{Binding Presentacion}" />
 
-        <Label Text="Recomedación" />
-        <Entry Placeholder="Recomendación Según Tipo de Piel" Text="{Binding Recomendacion}" />
+            <Label Text="Tamaño" />
+            <Entry Placeholder="Ej: 100ml" Text="{Binding Tamano}" />
 
-        <Button Text="Guardar" Command="{Binding GuardarProductoCommand}" BackgroundColor="#27ae60" TextColor="White" />
-    </StackLayout>
+            <Label Text="Uso Principal" />
+            <Entry Placeholder="Ej: Hidratación, Protección Solar" Text="{Binding UsoPrincipal}" />
+
+            <Label Text="Tipo de Piel Recomendado" />
+            <Picker Title="Selecciona tipo de piel" 
+                    ItemsSource="{Binding TiposPiel}" 
+                    SelectedItem="{Binding TipoPielSeleccionado}" />
+
+            <Label Text="Ingredientes Activos" />
+            <Entry Placeholder="Ej: Ácido hialurónico, Niacinamida" Text="{Binding Ingredientes}" />
+
+            <Label Text="Propiedades" />
+            <StackLayout>
+                <CheckBox IsChecked="{Binding SinFragancia}" />
+                <Label Text="Sin fragancia" />
+
+                <CheckBox IsChecked="{Binding LibreDeParabenos}" />
+                <Label Text="Libre de parabenos" />
+
+                <CheckBox IsChecked="{Binding NoComedogenico}" />
+                <Label Text="No comedogénico" />
+            </StackLayout>
+
+            <Label Text="Modo de Uso" />
+            <Editor Placeholder="Describe el modo de uso" AutoSize="TextChanges" Text="{Binding ModoUso}" />
+
+            <Label Text="Frecuencia de Uso" />
+            <Entry Placeholder="Ej: Mañana y noche" Text="{Binding Frecuencia}" />
+
+            <Label Text="Cantidad Sugerida" />
+            <Entry Placeholder="Ej: Unas gotas, una almendra" Text="{Binding Cantidad}" />
+
+            <Label Text="Categoría" />
+            <Picker Title="Selecciona categoría"
+                    ItemsSource="{Binding Categorias}"
+                    ItemDisplayBinding="{Binding Nombre}"
+                    SelectedItem="{Binding CategoriaSeleccionada}" />
+
+            <Label Text="Subcategoría" />
+            <Entry Placeholder="Ej: Serum, Gel, Crema" Text="{Binding Subcategoria}" />
+
+            <Label Text="Etiquetas" />
+            <Entry Placeholder="Ej: Antiedad, Hidratante, Suave" Text="{Binding Etiquetas}" />
+
+            <Label Text="Fecha de Alta" />
+            <DatePicker Date="{Binding FechaAlta}" />
+
+            <Label Text="Estado" />
+            <Picker Title="Selecciona estado"
+                    ItemsSource="{Binding Estados}" 
+                    SelectedItem="{Binding EstadoSeleccionado}" />
+
+            <Label Text="Código de Barras" />
+            <Entry Placeholder="Escanea o introduce código" Text="{Binding CodigoBarras}" />
+
+            <Label Text="Precio" />
+            <Entry Placeholder="0.00" Keyboard="Numeric" Text="{Binding Precio}" />
+
+            <Label Text="País de Origen" />
+            <Entry Placeholder="Ej: México" Text="{Binding PaisOrigen}" />
+
+            <Label Text="Caducidad" />
+            <DatePicker Date="{Binding FechaCaducidad}" />
+
+            <Label Text="Compatibilidad con Otros Productos" />
+            <Editor Placeholder="Ej: Compatible con retinoides, evitar con AHA" AutoSize="TextChanges" Text="{Binding Compatibilidad}" />
+
+            <Label Text="Contraindicaciones" />
+            <Editor Placeholder="Ej: No usar en piel lesionada" AutoSize="TextChanges" Text="{Binding Contraindicaciones}" />
+
+            <Button Text="Guardar" 
+                    Command="{Binding GuardarProductoCommand}" 
+                    BackgroundColor="#27ae60" 
+                    TextColor="White"
+                    CornerRadius="12" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

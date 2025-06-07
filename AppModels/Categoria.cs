@@ -7,6 +7,6 @@ namespace SkinAnalyzerApp.AppModels
         [PrimaryKey, AutoIncrement]
         public int idCategoria { get; set; }
         public string Nombre { get; set; } = string.Empty;
-        public string CondicionAnalisis { get; set; } = string.Empty;        
+        public string Subcategoria { get; set; }       
     }
 }

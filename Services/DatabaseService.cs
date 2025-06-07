@@ -1,5 +1,6 @@
 ﻿using SQLite;
 using SkinAnalyzerApp.AppModels;
+using SkinAnalyzerApp.ViewModels;
 using System.IO;
 
 namespace SkinAnalyzerApp.Services
@@ -14,7 +15,6 @@ namespace SkinAnalyzerApp.Services
             if (_database != null)
                 return;
 
-            // 👇 Agrega esto al inicio del método Init
             var dbPath = Path.Combine(FileSystem.AppDataDirectory, "skin_analyzer.db3");
 
             // ⚠️ Solo durante desarrollo: eliminar la base de datos existente
@@ -27,8 +27,8 @@ namespace SkinAnalyzerApp.Services
 
             // Crear tablas
             await _database.CreateTableAsync<User>();
-            await _database.CreateTableAsync<Producto>();
             await _database.CreateTableAsync<Categoria>();
+            await _database.CreateTableAsync<Producto>();
         }
 
         // CRUD de Usuario
@@ -61,14 +61,14 @@ namespace SkinAnalyzerApp.Services
         {
             await Init();
             return await _database.Table<Producto>()
-                .Where(p => p.Recomendacion.ToLower().Contains(condicion.ToLower()))
+                .Where(p => p.UsoPrincipal.ToLower().Contains(condicion.ToLower()))
                 .ToListAsync();
         }
 
-        public static async Task<Producto> ObtenerProductoPorId(int id)
+        public static async Task<Producto> ObtenerProductoPorId(int idProducto)
         {
             await Init();
-            return await _database.FindAsync<Producto>(id);
+            return await _database.FindAsync<Producto>(idProducto);
         }
 
         public static async Task<int> ActualizarProducto(Producto producto)
@@ -77,10 +77,10 @@ namespace SkinAnalyzerApp.Services
             return await _database.UpdateAsync(producto);
         }
 
-        public static async Task<int> EliminarProducto(int id)
+        public static async Task<int> EliminarProducto(int idProducto)
         {
             await Init();
-            var producto = await _database.FindAsync<Producto>(id);
+            var producto = await _database.FindAsync<Producto>(idProducto);
             if (producto != null)
             {
                 return await _database.DeleteAsync(producto);
@@ -99,6 +99,12 @@ namespace SkinAnalyzerApp.Services
         {
             await Init();
             return await _database.Table<Categoria>().ToListAsync();
+        }
+
+        public static async Task<Categoria> ObtenerCategoriaPorId(int idCategoria)
+        {
+            await Init();
+            return await _database.FindAsync<Categoria>(idCategoria);
         }
     }
 }

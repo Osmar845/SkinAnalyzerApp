@@ -4,17 +4,23 @@
              xmlns:vm="clr-namespace:SkinAnalyzerApp.ViewModels"
              x:Class="SkinAnalyzerApp.Views.AgregarCategoriaPage"
              Title="Categorías de Productos">
+
     <ContentPage.BindingContext>
         <vm:AgregarCategoriaViewModel />
     </ContentPage.BindingContext>
 
     <StackLayout Padding="20" Spacing="10">
-        <Label Text="Nombre" />
-        <Entry Placeholder="Nombre de la Categoría" Text="{Binding Nombre}" />
+        <Label Text="Nombre de la categoría" />
+        <Entry Placeholder="Ej. Limpiadores, Hidratantes, Exfoliantes" 
+               Text="{Binding Nombre}" />
 
-        <Label Text="Condiciones de Piel" />
-        <Entry Placeholder="Codiciones de Piel a la que va Dedicada" Text="{Binding Recomendacion}" />
+        <Label Text="Subcategoría" />
+        <Entry Placeholder="Ej. En gel, en crema, con AHA" 
+               Text="{Binding Subcategoria}" />
 
-        <Button Text="Guardar" Command="{Binding GuardarProductoCommand}" BackgroundColor="#27ae60" TextColor="White" />
+        <Button Text="Guardar categoría" 
+                Command="{Binding GuardarCategoriaCommand}" 
+                BackgroundColor="#27ae60" 
+                TextColor="White" />
     </StackLayout>
 </ContentPage>

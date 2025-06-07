@@ -12,12 +12,12 @@ namespace SkinAnalyzerApp.ViewModels
         private string nombre;
 
         [ObservableProperty]
-        private string condicionAnalisis;
+        private string subcategoria;
 
         [RelayCommand]
         private async Task GuardarCategoria()
         {
-            if (string.IsNullOrWhiteSpace(Nombre) || string.IsNullOrWhiteSpace(CondicionAnalisis))
+            if (string.IsNullOrWhiteSpace(Nombre) || string.IsNullOrWhiteSpace(Subcategoria))
             {
                 await Shell.Current.DisplayAlert("Error", "Todos los campos son obligatorios", "OK");
                 return;
@@ -26,7 +26,7 @@ namespace SkinAnalyzerApp.ViewModels
             var nuevaCategoria = new Categoria
             {
                 Nombre = Nombre,
-                CondicionAnalisis = CondicionAnalisis,
+                Subcategoria = Subcategoria
             };
 
             await DatabaseService.AgregarCategoria(nuevaCategoria);
