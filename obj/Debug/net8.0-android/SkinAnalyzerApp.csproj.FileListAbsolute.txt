@@ -121,6 +121,7 @@ C:\Users\TECHNO\source\repos\SkinAnalyzerApp\obj\Debug\net8.0-android\SkinAnalyz
 C:\Users\TECHNO\source\repos\SkinAnalyzerApp\obj\Debug\net8.0-android\SkinAnalyzerApp.AssemblyInfoInputs.cache
 C:\Users\TECHNO\source\repos\SkinAnalyzerApp\obj\Debug\net8.0-android\SkinAnalyzerApp.AssemblyInfo.cs
 C:\Users\TECHNO\source\repos\SkinAnalyzerApp\obj\Debug\net8.0-android\SkinAnalyzerApp.csproj.CoreCompileInputs.cache
+C:\Users\TECHNO\source\repos\SkinAnalyzerApp\obj\Debug\net8.0-android\SkinAnalyzerApp.sourcelink.json
 C:\Users\TECHNO\source\repos\SkinAnalyzerApp\obj\Debug\net8.0-android\XamlC.stamp
 C:\Users\TECHNO\source\repos\SkinAnalyzerApp\obj\Debug\net8.0-android\SkinAnalyzerApp.dll
 C:\Users\TECHNO\source\repos\SkinAnalyzerApp\obj\Debug\net8.0-android\SkinAnalyzerApp.pdb

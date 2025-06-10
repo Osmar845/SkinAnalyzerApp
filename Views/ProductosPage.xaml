@@ -10,20 +10,19 @@
     </ContentPage.BindingContext>
 
     <StackLayout Padding="20">
-        <!--<Button Text="Agregar Producto"
-                Command="{Binding AgregarProductoCommand}"
-                BackgroundColor="#27ae60"
-                TextColor="White"
-                Margin="0,0,0,10"/>-->
 
-        <CollectionView ItemsSource="{Binding Productos}">
+        <Label Text="Lista de Productos" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <CollectionView ItemsSource="{Binding Productos}" SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Padding="10" Margin="0,5">
+                    <Frame Padding="10" Margin="0,5" CornerRadius="10" BorderColor="#ccc">
                         <StackLayout>
                             <Label Text="{Binding Nombre}" FontAttributes="Bold" FontSize="18"/>
-                            <Label Text="{Binding Descripcion}" FontSize="14"/>
+                            <Label Text="{Binding Marca}" FontSize="14"/>
                             <Label Text="{Binding Precio, StringFormat='Precio: {0:C}'}" FontSize="14"/>
+                            <Label Text="{Binding TipoPiel}" FontSize="14"/>
                             <HorizontalStackLayout Spacing="10">
                                 <Button Text="Editar"
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductosViewModel}}, Path=EditarProductoCommand}"
@@ -39,5 +38,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
     </StackLayout>
 </ContentPage>

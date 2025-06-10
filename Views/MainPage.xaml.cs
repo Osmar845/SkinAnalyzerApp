@@ -1,4 +1,6 @@
 using Microsoft.Maui.Controls;
+using Microsoft.Maui.Media; // Para MediaPicker
+
 
 namespace SkinAnalyzerApp.Views
 {
@@ -26,55 +28,72 @@ namespace SkinAnalyzerApp.Views
 
         private async void OnScanClicked(object sender, EventArgs e)
         {
+            var button = sender as Button;
+
             try
             {
-                // Mostrar loading indicator
-                var button = sender as Button;
                 button.IsEnabled = false;
-                button.Text = "ANALIZANDO...";
+                button.Text = "Abriendo cámara...";
 
-                // Aquí puedes agregar la lógica para:
-                // 1. Solicitar permisos de cámara
-                // 2. Abrir la cámara
-                // 3. Capturar imagen
-                // 4. Procesar análisis de piel
-                // 5. Navegar a página de resultados
+                var photo = await MediaPicker.CapturePhotoAsync();
 
-                // Ejemplo de navegación (descomenta cuando tengas la página de análisis)
-                // await Shell.Current.GoToAsync("//analysis");
+                if (photo != null)
+                {
+                    button.Text = "Analizando rostro...";
 
-                // Simular proceso de análisis
-                await Task.Delay(2000);
+                    using var stream = await photo.OpenReadAsync();
+                    using var ms = new MemoryStream();
+                    await stream.CopyToAsync(ms);
+                    var imageBytes = ms.ToArray();
+                    var base64Image = Convert.ToBase64String(imageBytes);
 
-                // Mostrar mensaje de éxito temporal
-                await DisplayAlert("Análisis Completado",
-                    "Tu análisis de piel ha sido procesado exitosamente.",
-                    "Ver Resultados");
+                    var resultado = await AnalizarImagenConOpenAI(base64Image);
 
-                // Restaurar botón
-                button.IsEnabled = true;
+                    await DisplayAlert("Resultado del análisis", resultado, "Aceptar");
+                }
+
                 button.Text = "INICIAR ESCANEO";
+                button.IsEnabled = true;
             }
             catch (Exception ex)
             {
-                // Manejo de errores
-                await DisplayAlert("Error",
-                    $"Ocurrió un error durante el análisis: {ex.Message}",
-                    "OK");
-
-                // Restaurar botón en caso de error
-                var button = sender as Button;
-                button.IsEnabled = true;
+                await DisplayAlert("Error", $"No se pudo capturar la imagen: {ex.Message}", "OK");
                 button.Text = "INICIAR ESCANEO";
+                button.IsEnabled = true;
             }
         }
+
+        private async Task<string> AnalizarImagenConOpenAI(string base64Image)
+        {
+            try
+            {
+                // Aquí deberías construir la solicitud real a OpenAI o a tu API de análisis.
+                // Por ahora simulamos el análisis
+                await Task.Delay(1000); // Simula análisis de imagen
+
+                // Resultado de ejemplo (reemplazar con respuesta real del API)
+                return """
+                    Análisis de piel completado:
+                    - Tipo de piel: Grasa
+                    - Tono: Medio claro
+                    - Imperfecciones: Moderadas
+                    - Manchas: Leves
+                    - Acné: Presente
+                """;
+            }
+            catch (Exception ex)
+            {
+                return $"Error al analizar la imagen: {ex.Message}";
+            }
+        }
+
 
         private async void OnHistoryClicked(object sender, EventArgs e)
         {
             try
             {
                 // Navegar a la página de historial de análisis
-                // await Shell.Current.GoToAsync("//history");
+                 await Shell.Current.GoToAsync("//HistorialPage");
 
                 // Mensaje temporal mientras implementas la navegación
                 await DisplayAlert("Historial",

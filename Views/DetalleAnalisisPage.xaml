@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SkinAnalyzerApp.Views.DetalleAnalisisPage"
+             Title="Detalles del Análisis"
+             BackgroundColor="{StaticResource PageBackground}">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+            <Image Source="{Binding FotoPath}"
+                   Aspect="AspectFill"
+                   HeightRequest="250"
+                   BackgroundColor="#eee"/>
+
+            <Label Text="{Binding Fecha, StringFormat='Fecha: {0:dd/MM/yyyy HH:mm}'}" FontAttributes="Bold" />
+            <Label Text="{Binding TipoPiel}" />
+            <Label Text="{Binding TonoPiel}" />
+            <Label Text="{Binding Imperfecciones}" />
+            <Label Text="{Binding Manchas}" />
+            <Label Text="{Binding Acne}" />
+
+            <Label Text="Productos Recomendados:" FontAttributes="Bold" FontSize="18" />
+
+            <CollectionView x:Name="ProductosCollection">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="White" CornerRadius="12" Padding="10" Margin="5">
+                            <StackLayout>
+                                <Label Text="{Binding Nombre}" FontAttributes="Bold" />
+                                <Label Text="{Binding Marca}" FontSize="12"/>
+                                <Label Text="{Binding UsoPrincipal}" FontSize="12"/>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

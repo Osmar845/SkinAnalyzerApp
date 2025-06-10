@@ -32,4 +32,9 @@
         Route="MainPage"
         ContentTemplate="{DataTemplate views:MainPage}" />
 
+    <!-- Página para agregar o editar categorías -->
+    <ShellContent
+    Route="AgregarCategoriaPage"
+    ContentTemplate="{DataTemplate views:AgregarCategoriaPage}" />
+
 </Shell>
