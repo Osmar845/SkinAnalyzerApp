@@ -39,6 +39,7 @@ namespace SkinAnalyzerApp.ViewModels
             // Mostrar mensaje y redirigir
             await Shell.Current.DisplayAlert("Bienvenido", $"Hola {usuario.Nombre}", "OK");
             await Shell.Current.GoToAsync("//MainPage");
+
         }
     }
 }

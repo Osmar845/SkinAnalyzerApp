@@ -26,7 +26,7 @@ public partial class DetalleAnalisisPage : ContentPage
     protected override bool OnBackButtonPressed()
     {
         // Regresar al inicio manualmente
-        Shell.Current.GoToAsync("//historialpage");
+        Shell.Current.GoToAsync("//HistorialPage");
         return true; // evita que se cierre la app
     }
 

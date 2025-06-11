@@ -25,6 +25,8 @@
                             <Label Text="{Binding FechaAnalisis, StringFormat='Fecha: {0:dd/MM/yyyy HH:mm}'}"
                                    FontAttributes="Bold"/>
                             <Label Text="{Binding TipoPiel}" />
+                            <Label Text="{Binding TonoPiel}" />
+                            <Label Text="{Binding Acne}" />
                             <Label Text="{Binding Imperfecciones}" LineBreakMode="TailTruncation"/>
                         </StackLayout>
                     </StackLayout>

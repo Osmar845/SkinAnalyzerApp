@@ -84,20 +84,41 @@ namespace SkinAnalyzerApp.Views
 
         private async Task<HistorialAnalisis> AnalizarImagenConOpenAI(string base64Image)
         {
-            await Task.Delay(1000); // Simula procesamiento
+            var openAI = new OpenAIService();
 
-            return new HistorialAnalisis
+            // Convierte el Base64 a Stream (porque OpenAIService espera un Stream)
+            var imageBytes = Convert.FromBase64String(base64Image);
+            using var imageStream = new MemoryStream(imageBytes);
+
+            var resultadoTexto = await openAI.AnalizarImagenAsync(imageStream);
+
+            // Aquí debes hacer parsing del texto para extraer la información
+            // Te doy un ejemplo muy simple usando búsqueda por palabras clave.
+            // Recomendación: Mejorar esto luego con regex o procesamiento NLP.
+
+            string BuscarDato(string label, string texto)
             {
-                TipoPiel = "Grasa",
-                TonoPiel = "Medio claro",
-                Imperfecciones = "Moderadas",
-                Manchas = "Leves",
-                Acne = "Presente",
+                var index = texto.IndexOf(label, StringComparison.OrdinalIgnoreCase);
+                if (index == -1) return "No especificado";
+
+                var start = index + label.Length;
+                var end = texto.IndexOf('\n', start);
+                return texto.Substring(start, (end > start ? end : texto.Length) - start).Trim(':', '.', '-', ' ');
+            }
+
+            var analisis = new HistorialAnalisis
+            {
+                TipoPiel = BuscarDato("tipo de piel", resultadoTexto),
+                TonoPiel = BuscarDato("tono", resultadoTexto),
+                Imperfecciones = BuscarDato("imperfecciones", resultadoTexto),
+                Manchas = BuscarDato("manchas", resultadoTexto),
+                Acne = BuscarDato("acné", resultadoTexto),
                 ImagenBase64 = base64Image,
                 UsuarioId = App.UsuarioActivo.idUsuario
             };
-        }
 
+            return analisis;
+        }
 
         private async void OnHistoryClicked(object sender, EventArgs e)
         {

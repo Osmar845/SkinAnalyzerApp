@@ -25,6 +25,15 @@ public partial class HistorialPage : ContentPage
         }
     }
 
+    public async Task RecargarHistorial()
+    {
+        if (App.UsuarioActivo != null)
+        {
+            var historial = await DatabaseService.ObtenerHistorialPorUsuario(App.UsuarioActivo.idUsuario);
+            HistorialCollection.ItemsSource = historial;
+        }
+    }
+
     private async void OnItemSelected(object sender, SelectionChangedEventArgs e)
     {
         if (e.CurrentSelection.FirstOrDefault() is HistorialAnalisis item)
