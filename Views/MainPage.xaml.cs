@@ -1,4 +1,8 @@
 using Microsoft.Maui.Controls;
+using Microsoft.Maui.Media; // Para MediaPicker
+using SkinAnalyzerApp.AppModels;
+using SkinAnalyzerApp.Services;
+
 
 namespace SkinAnalyzerApp.Views
 {
@@ -26,60 +30,81 @@ namespace SkinAnalyzerApp.Views
 
         private async void OnScanClicked(object sender, EventArgs e)
         {
+            var button = sender as Button;
             try
             {
-                // Mostrar loading indicator
-                var button = sender as Button;
                 button.IsEnabled = false;
-                button.Text = "ANALIZANDO...";
+                button.Text = "Abriendo cámara...";
 
-                // Aquí puedes agregar la lógica para:
-                // 1. Solicitar permisos de cámara
-                // 2. Abrir la cámara
-                // 3. Capturar imagen
-                // 4. Procesar análisis de piel
-                // 5. Navegar a página de resultados
+                var photo = await MediaPicker.CapturePhotoAsync();
 
-                // Ejemplo de navegación (descomenta cuando tengas la página de análisis)
-                // await Shell.Current.GoToAsync("//analysis");
+                if (photo != null)
+                {
+                    button.Text = "Analizando rostro...";
 
-                // Simular proceso de análisis
-                await Task.Delay(2000);
+                    using var stream = await photo.OpenReadAsync();
+                    using var ms = new MemoryStream();
+                    await stream.CopyToAsync(ms);
+                    var imageBytes = ms.ToArray();
+                    var base64Image = Convert.ToBase64String(imageBytes);
 
-                // Mostrar mensaje de éxito temporal
-                await DisplayAlert("Análisis Completado",
-                    "Tu análisis de piel ha sido procesado exitosamente.",
-                    "Ver Resultados");
+                    var resultado = await AnalizarImagenConOpenAI(base64Image);
 
-                // Restaurar botón
-                button.IsEnabled = true;
+                    await GuardarAnalisisEnHistorial(
+                        resultado.TipoPiel,
+                        resultado.TonoPiel,
+                        resultado.Imperfecciones,
+                        resultado.Manchas,
+                        resultado.Acne,
+                        resultado.ImagenBase64
+                    );
+
+                    await DisplayAlert("Resultado del análisis", $"""
+                - Tipo de piel: {resultado.TipoPiel}
+                - Tono: {resultado.TonoPiel}
+                - Imperfecciones: {resultado.Imperfecciones}
+                - Manchas: {resultado.Manchas}
+                - Acné: {resultado.Acne}
+                """, "Aceptar" );
+                }
+                await Shell.Current.GoToAsync("//HistorialPage");
+
                 button.Text = "INICIAR ESCANEO";
             }
             catch (Exception ex)
             {
-                // Manejo de errores
-                await DisplayAlert("Error",
-                    $"Ocurrió un error durante el análisis: {ex.Message}",
-                    "OK");
-
-                // Restaurar botón en caso de error
-                var button = sender as Button;
-                button.IsEnabled = true;
+                await DisplayAlert("Error", $"No se pudo capturar la imagen: {ex.Message}", "OK");
                 button.Text = "INICIAR ESCANEO";
             }
+            finally
+            {
+                button.IsEnabled = true;
+            }
         }
+
+        private async Task<HistorialAnalisis> AnalizarImagenConOpenAI(string base64Image)
+        {
+            await Task.Delay(1000); // Simula procesamiento
+
+            return new HistorialAnalisis
+            {
+                TipoPiel = "Grasa",
+                TonoPiel = "Medio claro",
+                Imperfecciones = "Moderadas",
+                Manchas = "Leves",
+                Acne = "Presente",
+                ImagenBase64 = base64Image,
+                UsuarioId = App.UsuarioActivo.idUsuario
+            };
+        }
+
 
         private async void OnHistoryClicked(object sender, EventArgs e)
         {
             try
             {
                 // Navegar a la página de historial de análisis
-                // await Shell.Current.GoToAsync("//history");
-
-                // Mensaje temporal mientras implementas la navegación
-                await DisplayAlert("Historial",
-                    "Función de historial en desarrollo. Aquí podrás ver todos tus análisis anteriores.",
-                    "OK");
+                 await Shell.Current.GoToAsync("//HistorialPage");
             }
             catch (Exception ex)
             {
@@ -141,6 +166,22 @@ namespace SkinAnalyzerApp.Views
 
             // Aquí puedes agregar lógica adicional que se ejecute
             // cada vez que el usuario regrese a esta página
+        }
+        private async Task GuardarAnalisisEnHistorial(string tipoPiel, string tonoPiel, string imperfecciones, string manchas, string acne, string imagenBase64)
+        {
+            var nuevoRegistro = new HistorialAnalisis
+            {
+                UsuarioId = App.UsuarioActivo.idUsuario,
+                TipoPiel = tipoPiel,
+                TonoPiel = tonoPiel,
+                Imperfecciones = imperfecciones,
+                Manchas = manchas,
+                Acne = acne,
+                ImagenBase64 = imagenBase64,
+                FechaAnalisis = DateTime.Now
+            };
+
+            await DatabaseService.GuardarHistorial(nuevoRegistro);
         }
     }
 }

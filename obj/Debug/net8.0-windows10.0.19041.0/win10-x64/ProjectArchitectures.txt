@@ -1,0 +1,1 @@
+C:\Users\casta\Source\Repos\SkinAnalyzerApp\SkinAnalyzerApp.csproj;x64

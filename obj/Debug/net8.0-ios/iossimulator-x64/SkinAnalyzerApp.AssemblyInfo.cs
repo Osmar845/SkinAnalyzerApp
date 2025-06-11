@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkinAnalyzerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+48fe395f84010309aa187ffb48f4fd4007a75853")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6a84d9335c9fc50bf43cd25918d4b0d835603e8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkinAnalyzerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkinAnalyzerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

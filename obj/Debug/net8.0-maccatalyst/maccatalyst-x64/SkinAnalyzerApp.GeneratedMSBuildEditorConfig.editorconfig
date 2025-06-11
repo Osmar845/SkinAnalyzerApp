@@ -65,11 +65,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = SkinAnalyzerApp.Views.Agre
 build_metadata.AdditionalFiles.TargetPath = Views\AgregarProductoPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AgregarProductoPage.xaml
 
+[C:/Users/casta/Source/Repos/SkinAnalyzerApp/Views/DetalleAnalisisPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SkinAnalyzerApp.Views.DetalleAnalisisPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetalleAnalisisPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetalleAnalisisPage.xaml
+
 [C:/Users/casta/Source/Repos/SkinAnalyzerApp/Views/DetalleProductoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SkinAnalyzerApp.Views.DetalleProductoPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\DetalleProductoPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DetalleProductoPage.xaml
+
+[C:/Users/casta/Source/Repos/SkinAnalyzerApp/Views/HistorialPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SkinAnalyzerApp.Views.HistorialPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HistorialPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HistorialPage.xaml
 
 [C:/Users/casta/Source/Repos/SkinAnalyzerApp/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

@@ -34,7 +34,17 @@
 
     <!-- Página para agregar o editar categorías -->
     <ShellContent
-    Route="AgregarCategoriaPage"
-    ContentTemplate="{DataTemplate views:AgregarCategoriaPage}" />
+        Route="AgregarCategoriaPage"
+        ContentTemplate="{DataTemplate views:AgregarCategoriaPage}" />
+
+    <!-- Página para ver el historial de escaneos -->
+    <ShellContent
+        Route="HistorialPage"
+        ContentTemplate="{DataTemplate views:HistorialPage}" />
+
+    <!-- Página para ver los detalles de los escaneos realizados -->
+    <ShellContent
+        Route="DetalleAnalisisPage"
+        ContentTemplate="{DataTemplate views:DetalleAnalisisPage}" />
 
 </Shell>

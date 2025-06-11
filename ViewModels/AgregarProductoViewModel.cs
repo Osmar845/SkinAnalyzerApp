@@ -127,7 +127,7 @@ namespace SkinAnalyzerApp.ViewModels
             await Shell.Current.Navigation.PushModalAsync(new Views.MessageModalPage("Producto registrado correctamente."));
 
             // Opcional: volver a la página anterior después de cerrar modal
-            // await Shell.Current.GoToAsync("..");
+            await Shell.Current.GoToAsync("..");
         }
     }
 }

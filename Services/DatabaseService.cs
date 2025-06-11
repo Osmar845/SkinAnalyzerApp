@@ -29,6 +29,7 @@ namespace SkinAnalyzerApp.Services
             await _database.CreateTableAsync<User>();
             await _database.CreateTableAsync<Categoria>();
             await _database.CreateTableAsync<Producto>();
+            await _database.CreateTableAsync<HistorialAnalisis>(); // ✅ Añadido
         }
 
         // CRUD de Usuario
@@ -105,6 +106,22 @@ namespace SkinAnalyzerApp.Services
         {
             await Init();
             return await _database.FindAsync<Categoria>(idCategoria);
+        }
+
+        // ✅ CRUD de Historial de Análisis
+        public static async Task<int> GuardarHistorial(HistorialAnalisis historial)
+        {
+            await Init();
+            return await _database.InsertAsync(historial);
+        }
+
+        public static async Task<List<HistorialAnalisis>> ObtenerHistorialPorUsuario(int usuarioId)
+        {
+            await Init();
+            return await _database.Table<HistorialAnalisis>()
+                                  .Where(h => h.UsuarioId == usuarioId)
+                                  .OrderByDescending(h => h.FechaAnalisis)
+                                  .ToListAsync();
         }
     }
 }
