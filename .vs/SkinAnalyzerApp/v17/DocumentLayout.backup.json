@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\appmodels\\historialanalisis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:appmodels\\historialanalisis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\historialpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,28 +51,8 @@
       "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:views\\detalleanalisispage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\appmodels\\historialanalisis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:appmodels\\historialanalisis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\appmodels\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -150,58 +158,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OpenAIService.cs",
-              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\OpenAIService.cs",
-              "RelativeDocumentMoniker": "Services\\OpenAIService.cs",
-              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\OpenAIService.cs",
-              "RelativeToolTip": "Services\\OpenAIService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T21:56:21.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\MainPage.xaml.cs",
               "RelativeToolTip": "Views\\MainPage.xaml.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAMoAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T20:47:44.078Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OpenAIService.cs",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\OpenAIService.cs",
+              "RelativeDocumentMoniker": "Services\\OpenAIService.cs",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\OpenAIService.cs",
+              "RelativeToolTip": "Services\\OpenAIService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T21:56:21.357Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwBEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T22:05:10.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\DatabaseService.cs",
               "RelativeDocumentMoniker": "Services\\DatabaseService.cs",
               "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\DatabaseService.cs",
               "RelativeToolTip": "Services\\DatabaseService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAASwBYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwBcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:20:20.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:20:20.831Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HistorialPage.xaml",
-              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\HistorialPage.xaml",
-              "RelativeDocumentMoniker": "Views\\HistorialPage.xaml",
-              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\HistorialPage.xaml",
-              "RelativeToolTip": "Views\\HistorialPage.xaml",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBwAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-11T15:35:47.44Z",
-              "EditorCaption": ""
+              "Title": "HistorialAnalisis.cs",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppModels\\HistorialAnalisis.cs",
+              "RelativeDocumentMoniker": "AppModels\\HistorialAnalisis.cs",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppModels\\HistorialAnalisis.cs",
+              "RelativeToolTip": "AppModels\\HistorialAnalisis.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA2wA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T15:36:42.943Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T16:19:07.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T19:10:41.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T21:09:50.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "HistorialPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\HistorialPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\HistorialPage.xaml.cs",
@@ -209,12 +264,35 @@
               "RelativeToolTip": "Views\\HistorialPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T15:22:30.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T15:22:30.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
+              "Title": "HistorialPage.xaml",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\HistorialPage.xaml",
+              "RelativeDocumentMoniker": "Views\\HistorialPage.xaml",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\HistorialPage.xaml",
+              "RelativeToolTip": "Views\\HistorialPage.xaml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-11T15:35:47.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-06-12T16:33:44.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "DetalleAnalisisPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\DetalleAnalisisPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\DetalleAnalisisPage.xaml.cs",
@@ -222,25 +300,11 @@
               "RelativeToolTip": "Views\\DetalleAnalisisPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T15:21:17.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T15:21:17.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\LoginPage.xaml.cs",
-              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\LoginPage.xaml.cs",
-              "RelativeToolTip": "Views\\LoginPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T21:09:50.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\LoginPage.xaml",
               "RelativeDocumentMoniker": "Views\\LoginPage.xaml",
@@ -248,12 +312,11 @@
               "RelativeToolTip": "Views\\LoginPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-31T19:03:07.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T19:03:07.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppModels\\User.cs",
               "RelativeDocumentMoniker": "AppModels\\User.cs",
@@ -261,51 +324,11 @@
               "RelativeToolTip": "AppModels\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:14:16.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:14:16.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HistorialAnalisis.cs",
-              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppModels\\HistorialAnalisis.cs",
-              "RelativeDocumentMoniker": "AppModels\\HistorialAnalisis.cs",
-              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppModels\\HistorialAnalisis.cs",
-              "RelativeToolTip": "AppModels\\HistorialAnalisis.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T15:36:42.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T22:05:10.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAkwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T19:10:41.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -313,12 +336,11 @@
               "RelativeToolTip": "App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-03T21:26:20.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T21:26:20.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -326,12 +348,11 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAABcAAACAMzMzMzMbwCwAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-31T19:14:48.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T19:14:48.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ProductosPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\ProductosPage.xaml",
               "RelativeDocumentMoniker": "Views\\ProductosPage.xaml",
@@ -339,12 +360,11 @@
               "RelativeToolTip": "Views\\ProductosPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-03T18:00:43.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T18:00:43.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "DetalleAnalisisPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\DetalleAnalisisPage.xaml",
               "RelativeDocumentMoniker": "Views\\DetalleAnalisisPage.xaml",
@@ -352,12 +372,11 @@
               "RelativeToolTip": "Views\\DetalleAnalisisPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-11T15:21:12.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T15:21:12.702Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "AgregarProductoViewModel.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\AgregarProductoViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AgregarProductoViewModel.cs",
@@ -365,12 +384,11 @@
               "RelativeToolTip": "ViewModels\\AgregarProductoViewModel.cs",
               "ViewState": "AgIAAHIAAAAAAAAAAAAIwIEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T19:23:38.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T19:23:38.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Xamarin.Android.Resource.Designer.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
@@ -381,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "MessageModalPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\MessageModalPage.xaml",
               "RelativeDocumentMoniker": "Views\\MessageModalPage.xaml",
@@ -389,12 +407,11 @@
               "RelativeToolTip": "Views\\MessageModalPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-07T05:01:21.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T05:01:21.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "DetalleProductoPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\DetalleProductoPage.xaml",
               "RelativeDocumentMoniker": "Views\\DetalleProductoPage.xaml",
@@ -402,12 +419,11 @@
               "RelativeToolTip": "Views\\DetalleProductoPage.xaml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAkwBQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-07T04:30:04.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T04:30:04.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "DetalleProductoPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\DetalleProductoPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\DetalleProductoPage.xaml.cs",
@@ -415,12 +431,11 @@
               "RelativeToolTip": "Views\\DetalleProductoPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:30:30.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T04:30:30.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AgregarProductoPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\AgregarProductoPage.xaml",
               "RelativeDocumentMoniker": "Views\\AgregarProductoPage.xaml",
@@ -428,12 +443,11 @@
               "RelativeToolTip": "Views\\AgregarProductoPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-03T19:54:49.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T19:54:49.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "RegisterPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\RegisterPage.xaml",
               "RelativeDocumentMoniker": "Views\\RegisterPage.xaml",
@@ -441,12 +455,11 @@
               "RelativeToolTip": "Views\\RegisterPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-31T19:20:50.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T19:20:50.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\MainPage.xaml",
               "RelativeDocumentMoniker": "Views\\MainPage.xaml",
@@ -454,12 +467,11 @@
               "RelativeToolTip": "Views\\MainPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T20:39:02.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T20:39:02.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "AgregarCategoriaPage.xaml",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\AgregarCategoriaPage.xaml",
               "RelativeDocumentMoniker": "Views\\AgregarCategoriaPage.xaml",
@@ -467,12 +479,11 @@
               "RelativeToolTip": "Views\\AgregarCategoriaPage.xaml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAYwBkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-05T15:41:17.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T15:41:17.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppModels\\Producto.cs",
               "RelativeDocumentMoniker": "AppModels\\Producto.cs",
@@ -480,12 +491,11 @@
               "RelativeToolTip": "AppModels\\Producto.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAcwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:16:05.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:16:05.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppModels\\Categoria.cs",
               "RelativeDocumentMoniker": "AppModels\\Categoria.cs",
@@ -493,12 +503,11 @@
               "RelativeToolTip": "AppModels\\Categoria.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T15:41:44.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T15:41:44.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "AgregarCategoriaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\AgregarCategoriaViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AgregarCategoriaViewModel.cs",
@@ -506,12 +515,11 @@
               "RelativeToolTip": "ViewModels\\AgregarCategoriaViewModel.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAIwCMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T16:19:29.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T16:19:29.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -519,12 +527,11 @@
               "RelativeToolTip": "AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T22:51:42.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T22:51:42.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ProductosPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\ProductosPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\ProductosPage.xaml.cs",
@@ -532,12 +539,11 @@
               "RelativeToolTip": "Views\\ProductosPage.xaml.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T22:25:07.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T22:25:07.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "ProductosViewModel.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\ProductosViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\ProductosViewModel.cs",
@@ -545,12 +551,11 @@
               "RelativeToolTip": "ViewModels\\ProductosViewModel.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAiwCwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T18:01:52.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T18:01:52.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
@@ -558,12 +563,11 @@
               "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T16:34:51.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:34:51.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "RegisterPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\RegisterPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\RegisterPage.xaml.cs",
@@ -571,12 +575,11 @@
               "RelativeToolTip": "Views\\RegisterPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T22:28:47.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T22:28:47.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -584,8 +587,7 @@
               "RelativeToolTip": "MauiProgram.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T22:03:38.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T22:03:38.49Z"
             }
           ]
         }

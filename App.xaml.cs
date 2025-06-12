@@ -1,10 +1,11 @@
-﻿using SkinAnalyzerApp.AppModels;
+﻿using Microsoft.Maui.Dispatching; // Asegúrate de tener este using
+using SkinAnalyzerApp.Services;
+using SkinAnalyzerApp.AppModels;
 
 namespace SkinAnalyzerApp
 {
     public partial class App : Application
     {
-        // ✅ Propiedad para guardar el usuario autenticado
         public static User UsuarioActivo { get; set; }
 
         public App()
@@ -14,15 +15,19 @@ namespace SkinAnalyzerApp
 
             // Restaurar usuario desde Preferences
             var idUsuario = Preferences.Get("UsuarioId", -1);
-            var nombre = Preferences.Get("UsuarioNombre", null);
-
-            if (idUsuario != -1 && !string.IsNullOrWhiteSpace(nombre))
+            if (idUsuario != -1)
             {
-                UsuarioActivo = new User
+                Task.Run(async () =>
                 {
-                    idUsuario = idUsuario,
-                    Nombre = nombre
-                };
+                    var usuario = await DatabaseService.ObtenerUsuarioPorId(idUsuario);
+                    if (usuario != null)
+                    {
+                        MainThread.BeginInvokeOnMainThread(() =>
+                        {
+                            UsuarioActivo = usuario;
+                        });
+                    }
+                });
             }
         }
     }

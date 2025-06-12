@@ -21,8 +21,11 @@ namespace SkinAnalyzerApp.Views
             bool confirm = await DisplayAlert("Cerrar sesión", "¿Estás seguro que deseas cerrar sesión?", "Sí", "No");
             if (confirm)
             {
-                // Aquí puedes limpiar preferencias si las usas, como usuario almacenado
-                Preferences.Clear(); // si usas Preferences
+                Preferences.Remove("UsuarioId");
+                Preferences.Remove("UsuarioNombre");
+                Preferences.Remove("UsuarioEmail");
+
+                App.UsuarioActivo = null;
 
                 await Shell.Current.GoToAsync("//LoginPage");
             }
@@ -37,87 +40,145 @@ namespace SkinAnalyzerApp.Views
                 button.Text = "Abriendo cámara...";
 
                 var photo = await MediaPicker.CapturePhotoAsync();
-
-                if (photo != null)
+                if (photo == null)
                 {
-                    button.Text = "Analizando rostro...";
-
-                    using var stream = await photo.OpenReadAsync();
-                    using var ms = new MemoryStream();
-                    await stream.CopyToAsync(ms);
-                    var imageBytes = ms.ToArray();
-                    var base64Image = Convert.ToBase64String(imageBytes);
-
-                    var resultado = await AnalizarImagenConOpenAI(base64Image);
-
-                    await GuardarAnalisisEnHistorial(
-                        resultado.TipoPiel,
-                        resultado.TonoPiel,
-                        resultado.Imperfecciones,
-                        resultado.Manchas,
-                        resultado.Acne,
-                        resultado.ImagenBase64
-                    );
-
-                    await DisplayAlert("Resultado del análisis", $"""
-                - Tipo de piel: {resultado.TipoPiel}
-                - Tono: {resultado.TonoPiel}
-                - Imperfecciones: {resultado.Imperfecciones}
-                - Manchas: {resultado.Manchas}
-                - Acné: {resultado.Acne}
-                """, "Aceptar" );
+                    await DisplayAlert("Aviso", "No se capturó ninguna imagen", "OK");
+                    return;
                 }
-                await Shell.Current.GoToAsync("//HistorialPage");
 
-                button.Text = "INICIAR ESCANEO";
+                button.Text = "Procesando imagen...";
+
+                using var stream = await photo.OpenReadAsync();
+                using var ms = new MemoryStream();
+                await stream.CopyToAsync(ms);
+                var imageBytes = ms.ToArray();
+
+                if (imageBytes.Length == 0)
+                {
+                    await DisplayAlert("Error", "La imagen está vacía", "OK");
+                    return;
+                }
+
+                var base64Image = Convert.ToBase64String(imageBytes);
+
+                button.Text = "Analizando rostro...";
+
+                var resultado = await AnalizarImagenConOpenAI(base64Image);
+
+                if (resultado == null)
+                {
+                    await DisplayAlert("Error", "No se pudo completar el análisis", "OK");
+                    return;
+                }
+
+                await GuardarAnalisisEnHistorial(
+                    resultado.TipoPiel,
+                    resultado.TonoPiel,
+                    resultado.Imperfecciones,
+                    resultado.Manchas,
+                    resultado.Acne,
+                    resultado.ImagenBase64
+                );
+
+                await DisplayAlert("Resultado del análisis", $"""
+        - Tipo de piel: {resultado.TipoPiel}
+        - Tono: {resultado.TonoPiel}
+        - Imperfecciones: {resultado.Imperfecciones}
+        - Manchas: {resultado.Manchas}
+        - Acné: {resultado.Acne}
+        """, "Aceptar");
+
+                await Shell.Current.GoToAsync("//HistorialPage");
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Error", $"No se pudo capturar la imagen: {ex.Message}", "OK");
-                button.Text = "INICIAR ESCANEO";
+                await DisplayAlert("Error", $"Error inesperado: {ex.Message}", "OK");
+                System.Diagnostics.Debug.WriteLine($"Error completo: {ex}");
             }
             finally
             {
+                button.Text = "INICIAR ESCANEO";
                 button.IsEnabled = true;
             }
         }
 
         private async Task<HistorialAnalisis> AnalizarImagenConOpenAI(string base64Image)
         {
-            var openAI = new OpenAIService();
-
-            // Convierte el Base64 a Stream (porque OpenAIService espera un Stream)
-            var imageBytes = Convert.FromBase64String(base64Image);
-            using var imageStream = new MemoryStream(imageBytes);
-
-            var resultadoTexto = await openAI.AnalizarImagenAsync(imageStream);
-
-            // Aquí debes hacer parsing del texto para extraer la información
-            // Te doy un ejemplo muy simple usando búsqueda por palabras clave.
-            // Recomendación: Mejorar esto luego con regex o procesamiento NLP.
-
-            string BuscarDato(string label, string texto)
+            try
             {
-                var index = texto.IndexOf(label, StringComparison.OrdinalIgnoreCase);
-                if (index == -1) return "No especificado";
+                if (App.UsuarioActivo == null)
+                {
+                    await DisplayAlert("Error", "No se ha identificado un usuario activo", "OK");
+                    await Shell.Current.GoToAsync("//LoginPage");
+                    return null;
+                }
 
-                var start = index + label.Length;
-                var end = texto.IndexOf('\n', start);
-                return texto.Substring(start, (end > start ? end : texto.Length) - start).Trim(':', '.', '-', ' ');
+                var openAI = new OpenAIService();
+                var imageBytes = Convert.FromBase64String(base64Image);
+
+                using var imageStream = new MemoryStream(imageBytes);
+                var resultadoTexto = await openAI.AnalizarImagenAsync(imageStream);
+
+                // Mostrar la respuesta completa para debugging
+                System.Diagnostics.Debug.WriteLine($"Respuesta OpenAI: {resultadoTexto}");
+
+                // Verificar si hay errores en la respuesta
+                if (resultadoTexto.StartsWith("Error"))
+                {
+                    await DisplayAlert("Error de API", resultadoTexto, "OK");
+                    return null;
+                }
+
+                // Función simplificada de extracción
+                string ExtraerValor(string campo, string texto)
+                {
+                    try
+                    {
+                        var patron = $@"{campo}:\s*(.+?)(?=\n\w+:|$)";
+                        var regex = new System.Text.RegularExpressions.Regex(patron,
+                            System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+                        var match = regex.Match(texto);
+                        if (match.Success)
+                        {
+                            return match.Groups[1].Value.Trim();
+                        }
+
+                        return "No especificado";
+                    }
+                    catch
+                    {
+                        return "No especificado";
+                    }
+                }
+
+                var analisis = new HistorialAnalisis
+                {
+                    TipoPiel = ExtraerValor("TIPO_DE_PIEL", resultadoTexto),
+                    TonoPiel = ExtraerValor("TONO_DE_PIEL", resultadoTexto),
+                    Imperfecciones = ExtraerValor("IMPERFECCIONES", resultadoTexto),
+                    Manchas = ExtraerValor("MANCHAS", resultadoTexto),
+                    Acne = ExtraerValor("ACNE", resultadoTexto),
+                    ImagenBase64 = base64Image,
+                    UsuarioId = App.UsuarioActivo.idUsuario
+                };
+
+                // Debug: Mostrar valores extraídos
+                System.Diagnostics.Debug.WriteLine($"Valores extraídos:");
+                System.Diagnostics.Debug.WriteLine($"- Tipo: '{analisis.TipoPiel}'");
+                System.Diagnostics.Debug.WriteLine($"- Tono: '{analisis.TonoPiel}'");
+                System.Diagnostics.Debug.WriteLine($"- Imperfecciones: '{analisis.Imperfecciones}'");
+                System.Diagnostics.Debug.WriteLine($"- Manchas: '{analisis.Manchas}'");
+                System.Diagnostics.Debug.WriteLine($"- Acné: '{analisis.Acne}'");
+
+                return analisis;
             }
-
-            var analisis = new HistorialAnalisis
+            catch (Exception ex)
             {
-                TipoPiel = BuscarDato("tipo de piel", resultadoTexto),
-                TonoPiel = BuscarDato("tono", resultadoTexto),
-                Imperfecciones = BuscarDato("imperfecciones", resultadoTexto),
-                Manchas = BuscarDato("manchas", resultadoTexto),
-                Acne = BuscarDato("acné", resultadoTexto),
-                ImagenBase64 = base64Image,
-                UsuarioId = App.UsuarioActivo.idUsuario
-            };
-
-            return analisis;
+                System.Diagnostics.Debug.WriteLine($"Error en análisis: {ex}");
+                await DisplayAlert("Error", $"Error procesando análisis: {ex.Message}", "OK");
+                return null;
+            }
         }
 
         private async void OnHistoryClicked(object sender, EventArgs e)

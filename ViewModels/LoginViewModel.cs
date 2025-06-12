@@ -35,11 +35,14 @@ namespace SkinAnalyzerApp.ViewModels
             // Guardar sesión con Preferences
             Preferences.Set("UsuarioEmail", usuario.Email);
             Preferences.Set("UsuarioNombre", usuario.Nombre);
+            Preferences.Set("UsuarioId", usuario.idUsuario); // Guarda también el ID
+
+            // 🟢 Asignar usuario activo en la app
+            App.UsuarioActivo = usuario;
 
             // Mostrar mensaje y redirigir
             await Shell.Current.DisplayAlert("Bienvenido", $"Hola {usuario.Nombre}", "OK");
             await Shell.Current.GoToAsync("//MainPage");
-
         }
     }
 }

@@ -18,10 +18,10 @@ namespace SkinAnalyzerApp.Services
             var dbPath = Path.Combine(FileSystem.AppDataDirectory, "skin_analyzer.db3");
 
             // ⚠️ Solo durante desarrollo: eliminar la base de datos existente
-            if (File.Exists(dbPath))
-            {
-                File.Delete(dbPath);
-            }
+            //if (File.Exists(dbPath))
+            //{
+            //    File.Delete(dbPath);
+            //}
 
             _database = new SQLiteAsyncConnection(dbPath);
 
@@ -29,7 +29,15 @@ namespace SkinAnalyzerApp.Services
             await _database.CreateTableAsync<User>();
             await _database.CreateTableAsync<Categoria>();
             await _database.CreateTableAsync<Producto>();
-            await _database.CreateTableAsync<HistorialAnalisis>(); // ✅ Añadido
+            await _database.CreateTableAsync<HistorialAnalisis>();
+        }
+
+        public static async Task<User> ObtenerUsuarioPorId(int idUsuario)
+        {
+            await Init(); // Inicializa la base de datos si aún no lo está
+            return await _database.Table<User>()
+                                  .Where(u => u.idUsuario == idUsuario)
+                                  .FirstOrDefaultAsync();
         }
 
         // CRUD de Usuario
