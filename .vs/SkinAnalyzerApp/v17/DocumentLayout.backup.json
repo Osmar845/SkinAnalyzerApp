@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\appmodels\\historialanalisis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84FD0C4E-CCE5-481A-B0E0-83D886A4A951}|SkinAnalyzerApp.csproj|c:\\users\\techno\\source\\repos\\skinanalyzerapp\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,17 +153,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Views\\MainPage.xaml.cs",
               "RelativeToolTip": "Views\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T20:47:44.078Z",
               "IsPinned": true,
@@ -171,20 +171,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "OpenAIService.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\OpenAIService.cs",
               "RelativeDocumentMoniker": "Services\\OpenAIService.cs",
               "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\OpenAIService.cs",
               "RelativeToolTip": "Services\\OpenAIService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T21:56:21.357Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T16:19:07.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -196,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\Services\\DatabaseService.cs",
               "RelativeDocumentMoniker": "Services\\DatabaseService.cs",
@@ -208,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HistorialAnalisis.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\AppModels\\HistorialAnalisis.cs",
               "RelativeDocumentMoniker": "AppModels\\HistorialAnalisis.cs",
@@ -220,19 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\.env",
-              "RelativeDocumentMoniker": ".env",
-              "ToolTip": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\.env",
-              "RelativeToolTip": ".env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-12T16:19:07.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\TECHNO\\source\\repos\\SkinAnalyzerApp\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
@@ -240,7 +242,8 @@
               "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAQwC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T19:10:41.486Z"
+              "WhenOpened": "2025-05-31T19:10:41.486Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
